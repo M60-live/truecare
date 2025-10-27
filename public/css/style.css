@@ -1,4 +1,56 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+.body {
+   font-family: "Trirong", serif;
     font-weight: 300;
+}
+
+.card {
+background: rgba(0, 0, 0, 0.88);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.2px);
+-webkit-backdrop-filter: blur(9.2px);
+border: 1px solid rgba(0, 0, 0, 1);
+
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Dark semi-transparent overlay */
+    color: white; /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+  }
+
+.btn{
+  background-color: white;
+  border-color: #000000;
+  border-radius: 80px;
+  color: #ffffff;
+}
+
+.btn-dark:hover{
+  background-color: rgb(255, 255, 255);
+  border-color: #000000;
+  border-radius: 80px;
+  color: #000000;
+}
+
+.card-body {
+  color: rgb(0, 0, 0);
+  border: none;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.788);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
