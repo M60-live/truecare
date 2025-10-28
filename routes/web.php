@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/bookings', [BookingController::class, 'booking'])->name('bookings');
+Route::get('/get-calendar-bookings', [BookingController::class, 'getCalendarBookings'])->name('getCalendarBookings');
