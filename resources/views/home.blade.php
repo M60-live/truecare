@@ -43,7 +43,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                                 </div>
                                 <div class="col col-md-4">
-                                    <a href="" class="btn btn-light primary-button">Make Bookings</a>
+                                    <a href="" class="btn btn-outline-dark primary-button">Make Bookings</a>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                                 </div>
                                 <div class="col col-md-4">
-                                    <a href="" class="btn btn-light primary-button">Make Bookings</a>
+                                    <a href="" class="btn btn-outline-dark primary-button">Make Bookings</a>
                                 </div>
                             </div>
                         </div>

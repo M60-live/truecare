@@ -30,7 +30,7 @@
                         Services
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/" class="dropdown-item">Dental</a></li>
+                        <li><a href="/bookings" class="dropdown-item">Dental</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a href="/" class="dropdown-item">Holistic Services</a></li>
                     </ul>
@@ -46,8 +46,8 @@
     @yield('content')
 
 <footer class="text-white bg-dark">
-    <div class="container" style="padding: 5.6em 0;">
-        <div class="row">
+    <div class="container">
+        <div class="row" style="padding: 5.6em 0;">
             <div class="col col-md-3 col-sm-6">
                 <img src="{{ '/img/TrueCare-txtWhite-trans-tri.png' }}" style="height:auto; width:100%;" />
             </div>

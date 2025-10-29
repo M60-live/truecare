@@ -52,13 +52,12 @@ h1,h2,h3,h4,h5 {
     padding: 1.1rem 2rem;
 }
 
-.btn-light {
-    background: #fff;
-    border: 1px solid #000;
-}
-
 .btn-light:hover {
     color: #fff;
     background: #000;
     border: 1px solid #000;
+}
+
+.modal-footer {
+    justify-content: center;
 }

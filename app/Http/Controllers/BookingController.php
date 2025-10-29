@@ -33,4 +33,9 @@ class BookingController extends Controller
         ];
         return $events;
     }
+
+    public function confirmBooking(Request $request)
+    {
+        dd($request->all());
+    }
 }

@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/bookings', [BookingController::class, 'booking'])->name('bookings');
 Route::get('/get-calendar-bookings', [BookingController::class, 'getCalendarBookings'])->name('getCalendarBookings');
+Route::post('/confirm-booking', [BookingController::class, 'confirmBooking'])->name('confirmBooking');
