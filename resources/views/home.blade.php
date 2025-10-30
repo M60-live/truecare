@@ -4,7 +4,7 @@
 <section class="container">
     <div class="row">
         <div class="col">
-            <h1 class="text-center" style="padding-top: 3.3em;padding-bottom: 3.3em;">A Holistic Approach To Every Smile</h1>
+            <h1 class="text-center" style="padding-top: 4.2em;padding-bottom: 4.2em;">A Holistic Approach To Every Smile</h1>
         </div>
     </div>
 
@@ -12,8 +12,8 @@
         <div class="col dental-block">
             <div class="overlay">
                 <div class="block-content">
-                    <a href="/bookings" class="btn btn-light primary-button me-2">Book Appointment <span class="fa fa-arrow-circle-right"></span></a>
-                    <a href="/services" class="btn btn-dark primary-button">Check Our Services</a>
+                    <a href="/bookings" class="btn btn-light primary-button me-md-2 me-0">Book Appointment <span class="fa fa-arrow-circle-right"></span></a>
+                    <a href="/services" class="btn btn-dark primary-button mt-md-0 mt-2">Check Our Services</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="card">
+                    <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">Extractions</h5>
                             <div class="row">

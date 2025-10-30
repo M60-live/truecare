@@ -32,7 +32,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="/bookings" class="dropdown-item">Dental</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a href="/" class="dropdown-item">Holistic Services</a></li>
+                        <li><a href="/shop" class="dropdown-item">Holistic Services</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -58,6 +58,11 @@
                     <li><a href="/bookings" class="text-white nav-link">Bookings</a></li>
                     <li><a href="/services" class="text-white nav-link">Services</a></li>
                     <li><a href="/contact" class="text-white nav-link">Contact</a></li>
+                    @auth()
+                        <li><a href="/dashboard" class="text-white nav-link"><u>Go to Dashboard</u></a></li>
+                    @else
+                        <li><a href="/login" class="text-white nav-link">Back Office</a></li>
+                    @endauth
                 </ul>
             </div>
 

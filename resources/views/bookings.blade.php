@@ -4,6 +4,12 @@
     <section class="container">
 
         <div class="row my-5">
+            @if (session('status'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Appointment Booked!</strong> Please ensure you find our location and arrive 15min before your booked time.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
             <div class="col">
                 <p>
                     <strong>NB:</strong> Please note that <strong>Sundays</strong> are open for walk in on <strong>first-come first-serve</strong> basis.<br>
