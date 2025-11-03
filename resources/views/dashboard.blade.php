@@ -56,7 +56,7 @@
                                             <td>{{ $booking->contact }}</td>
                                             <td>{{ $booking->email }}</td>
                                             <td>{{ $booking->notes }}</td>
-                                            <td>[View/Update]</td>
+                                            <td><a href="/booking/{{ $booking->id }}">[View/Update]</a></td>
                                         </tr>
                                     @endforeach
                                 </tbody>

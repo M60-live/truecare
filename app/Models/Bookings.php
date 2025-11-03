@@ -23,6 +23,12 @@ class Bookings extends Model
 
     public $timestamps = false;
 
+    public function booking($id)
+    {
+        return DB::table('bookings')
+            ->where('id', $id)->first();
+    }
+
     public function get_bookings()
     {
         return DB::table('bookings')

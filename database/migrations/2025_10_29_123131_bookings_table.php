@@ -21,6 +21,8 @@ return new class extends Migration
             $table->dateTime('booking_end');
             $table->dateTime('created_at');
             $table->dateTime('updated_by')->nullable();
+            $table->integer('confirmed_by')->nullable();
+            $table->dateTime('confirmed_at')->nullable();
         });
     }
 

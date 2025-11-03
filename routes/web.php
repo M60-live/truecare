@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookingController;
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 
@@ -30,6 +30,10 @@ Route::post('/confirm-booking', [BookingController::class, 'confirmBooking'])->n
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('profile.edit');
+    Route::get('/booking/{id}', [AdminController::class, 'viewBooking'])->name('booking.view');
+    Route::put('/booking/{id}/update', [AdminController::class, 'updateBooking'])->name('booking.update_datetime');
+    Route::post('/booking/{id}/note', [AdminController::class, 'addBookingNote'])->name('booking.add_booking_note');
+    Route::put('/booking/{id}/confirm', [AdminController::class, 'confirmBooking'])->name('booking.confirm');
 });
 
 require __DIR__.'/auth.php';
