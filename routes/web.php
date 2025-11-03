@@ -1,7 +1,9 @@
 <?php
 
-use Illuminate\Routing\Route as RoutingRoute;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,16 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/model', function () {
-    return view('model');
+Route::get('/shop', function () {
+    return view('shop');
 });
+
+Route::get('/bookings', [BookingController::class, 'booking'])->name('bookings');
+Route::get('/get-calendar-bookings', [BookingController::class, 'getCalendarBookings'])->name('getCalendarBookings');
+Route::post('/confirm-booking', [BookingController::class, 'confirmBooking'])->name('confirmBooking');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('profile.edit');
+});
+
+require __DIR__.'/auth.php';
