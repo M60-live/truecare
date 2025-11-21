@@ -14,7 +14,6 @@ class BookingController extends Controller
 
     public function getCalendarBookings(Request $request)
     {
-
         /*$events = [
             [
                 'title' => 'Booked 1',
@@ -35,7 +34,7 @@ class BookingController extends Controller
             ],
         ];*/
 
-        $Bookings = (new Bookings())->get_bookings();
+        $Bookings = (new Bookings())->get_all_bookings();
         $count = 0;
         $events = [];
         foreach ($Bookings as $booking)

@@ -29,10 +29,33 @@ class Bookings extends Model
             ->where('id', $id)->first();
     }
 
-    public function get_bookings()
+    public function todays_bookings()
+    {
+        return DB::table('bookings')
+            ->whereRaw("LEFT(booking_start, 10)='" . date('Y-m-d', strtotime(now())) . "'")
+            ->orderByDesc('booking_start')->get();
+    }
+
+    public function get_all_bookings()
     {
         return DB::table('bookings')
             ->orderByDesc('booking_start')->get();
+    }
+
+    public function get_bookings()
+    {
+        return DB::table('bookings')
+            ->whereRaw("LEFT(booking_start, 10) != '" . date('Y-m-d', strtotime(now())) . "'")
+            ->orderByDesc('booking_start')->get();
+    }
+
+    public function search_booking($search_item)
+    {
+        return DB::table('bookings')
+            ->whereRaw("name like '%" . $search_item . "%'")
+            ->orWhereRaw("email like '%" . $search_item . "%'")
+            ->orWhereRaw("contact like '%" . $search_item . "%'")
+            ->get();
     }
 
     public function get_bookings_by_date($date)
