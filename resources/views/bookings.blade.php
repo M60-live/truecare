@@ -19,9 +19,9 @@
             </div>
             <div class="col text-end">
 
-                <button type="button" class="btn btn-dark primary-button" data-bs-toggle="modal" data-bs-target="#addEventModal">
+                {{--<button type="button" class="btn btn-dark primary-button" data-bs-toggle="modal" data-bs-target="#addEventModal">
                     Book Appointment
-                </button>
+                </button>--}}
 
                 <div class="modal fade modal-lg" id="addEventModal" tabindex="-1" aria-labelledby="addEventModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
