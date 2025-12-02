@@ -1,3 +1,4 @@
+{{--
 @extends('layout.layout')
 @section('content')
 
@@ -58,3 +59,4 @@
         </div>
     </section>
 @endsection
+--}}
