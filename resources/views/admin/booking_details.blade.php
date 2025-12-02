@@ -14,29 +14,40 @@
                         Patient Details
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{ $Booking->name }}</h5>
-                        <p class="card-text text-start">
-                            Email: <strong>{{ $Booking->email }}</strong><br>
-                            Contact: <strong>{{ $Booking->contact }}</strong><br>
-                            Booking Date: <strong>{{ date('d M Y', strtotime($Booking->booking_start)) }}</strong><br>
-                            Booking Starting: <strong>{{ date('H:i:s', strtotime($Booking->booking_start)) }}</strong><br>
-                            Booking Ending: <strong>{{ date('H:i:s', strtotime($Booking->booking_end)) }}</strong><br>
-                            <button class="btn btn-sm btn-outline-dark primary-button">Update Date/Time</button>
-                        </p>
-                        <p class="card-text text-start">
-                            <span class="mt-3"><strong>Patient Notes:</strong></span>
-                            {{ $Booking->notes }}
-                        </p>
-
-                        <div class="card-text text-start mb-3">
-                            <strong>Add Notes:</strong>
-                            <form method="POST" action="/booking/{{ $Booking->id }}/note">
-                                @csrf
-                                <textarea name="note" class="form-control form-text" cols="3" rows="4" placeholder="Doctor's notes/codes"></textarea>
-                                <button class="btn btn-dark primary-button mt-2">Add Note</button>
-                            </form>
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="card-title">{{ $Booking->name }}</h5>
+                            </div>
+                            <div class="col col-md-9">
+                                <p class="card-text text-start">
+                                    Email: <strong>{{ $Booking->email }}</strong><br>
+                                    Contact: <strong>{{ $Booking->contact }}</strong><br>
+                                    Booking Date: <strong>{{ date('l d M Y', strtotime($Booking->booking_start)) }}</strong><br>
+                                    Booking Time: <strong>{{ date('H:i', strtotime($Booking->booking_start)) }}</strong> - <strong>{{ date('H:i', strtotime($Booking->booking_end)) }}</strong>
+                                </p>
+                                <p class="card-text text-start">
+                                    <span class="mt-3"><strong>Patient Notes:</strong></span>
+                                    {{ $Booking->notes }}
+                                </p>
+                            </div>
+                            <div class="col col-md-3">
+                                <button class="btn btn-sm btn-outline-dark primary-button">Update Date/Time</button>
+                            </div>
                         </div>
-{{--                        <a href="#" class="btn btn-primary primary-button">Confirm Booking</a>--}}
+                        <hr>
+                        {{--<div class="row">
+                            <div class="col">
+                                <div class="card-text text-start mb-3 mt-5">
+                                    <strong class="">Doctor's notes/codes:</strong>
+                                    <form method="POST" action="/booking/{{ $Booking->id }}/note">
+                                        @csrf
+                                        <textarea name="note" class="form-control form-text" cols="3" rows="4" placeholder="Type your notes here..."></textarea>
+                                        <button class="btn btn-dark primary-button mt-2">Add Note</button>
+                                    </form>
+                                </div>
+                                --}}{{--                        <a href="#" class="btn btn-primary primary-button">Confirm Booking</a>--}}{{--
+                            </div>
+                        </div>--}}
                     </div>
                     <div class="card-footer text-body-secondary">
                         <button class="btn btn-outline-dark primary-button">Cancel Booking</button>

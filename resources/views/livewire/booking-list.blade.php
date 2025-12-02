@@ -16,7 +16,7 @@
         <tbody>
         @foreach($Bookings as $booking)
             <tr>
-                <td><strong>{{ date('d M Y H:i:s', strtotime($booking->booking_start)) . ' - ' . date('H:i:s', strtotime($booking->booking_end)) }}</strong></td>
+                <td><strong>{{ date('d M Y H:i', strtotime($booking->booking_start)) . ' - ' . date('H:i', strtotime($booking->booking_end)) }}</strong></td>
                 <td>{{ $booking->name }}</td>
                 <td>{{ $booking->contact }}</td>
                 <td>{{ $booking->email }}</td>
