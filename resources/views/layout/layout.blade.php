@@ -21,11 +21,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <span class="navbar-text me-4">
+            {{--<span class="navbar-text me-4">
                 <strong><i class="fa fa-map-marker"></i> 21 Jump Dr, Halfway House, Midrand, 2001</strong>
-            </span>
+            </span>--}}
             <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                {{--<li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
@@ -34,9 +37,18 @@
                         <li><hr class="dropdown-divider"></li>
                         <li><a href="/shop" class="dropdown-item">Holistic Services</a></li>
                     </ul>
+                </li>--}}
+                <li class="nav-item">
+                    <a href="/bookings" class="nav-link">Bookings</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/" class="nav-link">Contact</a>
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -55,6 +67,7 @@
             <div class="col col-md-3 col-sm-6">
                 <h3 class="text-center">Menu</h3>
                 <ul class="list-unstyled text-center">
+                    <li><a href="/" class="text-white nav-link">Home</a></li>
                     <li><a href="/bookings" class="text-white nav-link">Bookings</a></li>
                     <li><a href="/services" class="text-white nav-link">Services</a></li>
                     <li><a href="/contact" class="text-white nav-link">Contact</a></li>

@@ -24,6 +24,14 @@ Route::get('/shop', function () {
     return view('shop');
 });
 
+Route::get('/services', function () {
+    return view('services');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
 Route::get('/bookings', [BookingController::class, 'booking'])->name('bookings');
 Route::get('/get-calendar-bookings', [BookingController::class, 'getCalendarBookings'])->name('getCalendarBookings');
 Route::post('/confirm-booking', [BookingController::class, 'confirmBooking'])->name('confirmBooking');

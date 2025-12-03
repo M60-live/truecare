@@ -1,9 +1,9 @@
 @extends('layout.layout')
 @section('content')
 
-    <section class="container">
+    <section class="container my-5">
 
-        <div class="row my-5">
+        <div class="row">
             @if (session('status'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>Appointment Booked!</strong> Please ensure you find our location and arrive 15min before your booked time.
@@ -70,17 +70,14 @@
 
             </div>
         </div>
+
         <div class="row">
             <div class="col">
                 <div id="calendar" class="mb-5"></div>
             </div>
         </div>
 
-        <div class="row mb-5 mt-3">
-            <div class="col">
-                <p>You can also make a booking via our WhatsApp number: <strong>0791343222</strong></p>
-            </div>
-        </div>
+        @include('common/whatsapp')
 
     </section>
 
