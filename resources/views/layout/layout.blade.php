@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="TrueCareDentistry, TrueCare">
+    <meta name="keywords" content="Dentist, Dental, Dr. Thembi Maswanganye">
+    <link rel="shortcut icon" href="{{ asset('/img/fav.png') }}" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://truecaredentistry.co.za/img/fav.png">
 
     <title>True Care Dentistry | @yield('title')</title>
     <meta name="title" content="True Care Dentistry | @yield('title')" />
+    <meta name="description" content="Where dental care meets whole-body wellness" />
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=quicksand:300,500,700" rel="stylesheet" />
