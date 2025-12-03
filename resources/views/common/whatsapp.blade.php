@@ -6,13 +6,13 @@
                 <div class="row">
                     <div class="col col-md-9">
                         <p class="card-text">
-                            Just call or send us a <strong><a href="https://wa.me/+27791354311?text={{ urlencode('I need my teeth checked out.') }}" target="_blank">WhatsApp</a></strong> text on our number and schedule an appointment.
+                            Just call or send us a <strong><a href="https://wa.me/+27659433852?text={{ urlencode('I need my teeth checked out.') }}" target="_blank">WhatsApp</a></strong> text on our number and schedule an appointment.
                             <br>We’re ready to assist you. Visit our clinic for a thorough examination and
                             personalized treatment recommendations.<br>
                         </p>
                     </div>
                     <div class="col col-md-3">
-                        <a href="https://wa.me/+27791354311?text={{ urlencode('I need my teeth checked out.') }}" target="_blank">
+                        <a href="https://wa.me/+27659433852?text={{ urlencode('I need my teeth checked out.') }}" target="_blank">
                             <img src="{{ asset('/img/WhatsAppButtonGreenLarge.svg') }}" />
                         </a>
                     </div>

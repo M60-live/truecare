@@ -1,6 +1,10 @@
 @extends('layout.layout')
-@section('content')
 
+@section('title')
+    Home Page
+@endsection
+
+@section('content')
 <section class="container">
     <div class="row">
         <div class="col">

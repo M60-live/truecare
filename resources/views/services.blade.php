@@ -1,4 +1,9 @@
 @extends('layout.layout')
+
+@section('title')
+    Our Services
+@endsection
+
 @section('content')
 
     <section class="container my-5">

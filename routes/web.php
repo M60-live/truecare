@@ -32,6 +32,14 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/frequently-asked-questions', function () {
+    return view('faqs');
+});
+
 Route::get('/bookings', [BookingController::class, 'booking'])->name('bookings');
 Route::get('/get-calendar-bookings', [BookingController::class, 'getCalendarBookings'])->name('getCalendarBookings');
 Route::post('/confirm-booking', [BookingController::class, 'confirmBooking'])->name('confirmBooking');

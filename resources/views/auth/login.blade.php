@@ -1,4 +1,9 @@
 @extends('layout.layout')
+
+@section('title')
+    Login
+@endsection
+
 @section('content')
     <section class="container">
 

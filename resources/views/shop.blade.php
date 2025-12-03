@@ -1,4 +1,9 @@
 @extends('layout.layout')
+
+@section('title')
+    Shop Our Wellness Products
+@endsection
+
 @section('content')
 
     <section class="container my-5">

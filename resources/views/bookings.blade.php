@@ -1,4 +1,9 @@
 @extends('layout.layout')
+
+@section('title')
+    Book Appointment
+@endsection
+
 @section('content')
 
     <section class="container my-5">
